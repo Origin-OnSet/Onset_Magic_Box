@@ -33,6 +33,11 @@ Open(player)
 local Magic_Box = ImportPackage("Onset_Magic_Box") -- Import to your Server Script Onset_Magic_Box
 
 Magic_Box.Create(0,0,1600,90) -- Create Magic box at x:0 y:0 z:1600 h:90
+
+AddRemoteEvent("Magic_Box:Open", function(player)
+  OpenMagiqueBox(player)
+end)
+
 ```
 
 [ Simple Client Side Script]
